@@ -48,7 +48,20 @@
                 AutoToolTipPrecision="1"
                 Minimum="0.1"
                 Maximum="30"/>
-        
+
+        <Label Grid.Column="1" 
+               Grid.Row="3"
+               VerticalAlignment="Center"
+               Content="Fps (s)"/>
+        <Slider x:Name="sliderFps" 
+                Grid.Column="2"
+                Grid.Row="3" 
+                VerticalAlignment="Center" 
+                AutoToolTipPlacement="TopLeft"
+                AutoToolTipPrecision="0"
+                Minimum="33"
+                Maximum="60"/>
+
         <Grid Grid.Column="1"
               Grid.ColumnSpan="2"
               Grid.Row="7">

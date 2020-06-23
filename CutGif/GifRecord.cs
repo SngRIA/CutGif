@@ -103,7 +103,7 @@ namespace CutGif
             {
                 Task.Factory.StartNew(() =>
                 {
-                    using (var gif = new AnimatedGifCreator(dialog.FileName, 33))
+                    using (var gif = new AnimatedGifCreator(dialog.FileName, int.Parse(Properties.Settings.Default["Fps"].ToString())))
                     {
                         int value = 0;
                         foreach (var img in framesPath)

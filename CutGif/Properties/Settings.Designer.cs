@@ -46,5 +46,17 @@ namespace CutGif.Properties {
                 this["WaitTimeBeforeRecord"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("33")]
+        public double Fps {
+            get {
+                return ((double)(this["Fps"]));
+            }
+            set {
+                this["Fps"] = value;
+            }
+        }
     }
 }

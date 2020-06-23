@@ -31,12 +31,14 @@ namespace CutGif
         {
             sliderWaitTime.Value = (double)Properties.Settings.Default["WaitTimeBeforeRecord"];
             sliderRecordTime.Value = (double)Properties.Settings.Default["TimeOfRecord"];
+            sliderFps.Value = (double)Properties.Settings.Default["Fps"];
         }
 
         private void ButtonSave(object sender, RoutedEventArgs e)
         {
             Properties.Settings.Default["WaitTimeBeforeRecord"] = sliderWaitTime.Value;
             Properties.Settings.Default["TimeOfRecord"] = sliderRecordTime.Value;
+            Properties.Settings.Default["Fps"] = sliderFps.Value;
             Properties.Settings.Default.Save();
 
             this.Close();
