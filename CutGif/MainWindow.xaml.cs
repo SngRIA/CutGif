@@ -42,7 +42,7 @@ namespace CutGif
         private void RecorderSaveRecord()
         {
             // После сохранения файла
-            this.Dispatcher.Invoke( () => buttonStart.IsEnabled = true );
+            buttonStart.IsEnabled = true;
             MessageBox.Show("Save");
         }
 
